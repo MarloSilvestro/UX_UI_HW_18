@@ -1,0 +1,67 @@
+header {
+    background-color: #d9847d;
+    padding: 1%;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: center;
+}
+
+.logo img {
+    float: left;
+    max-width: 25%;
+}
+
+nav {
+    width: 77%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    float: right;
+}
+
+nav ul,li {
+    padding: 0 1%;
+}
+
+.heroImg {
+    height: auto;
+    padding: 2%;
+    text-align: center;
+}
+
+.heroImg img {
+    max-width: 80%;
+    border-radius: 8px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #d9847d;
+}
+
+footer ul,li {
+    padding: 1%;
+}
+
+footer ul {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flexContainer div {
+    width: 33%;
+}
