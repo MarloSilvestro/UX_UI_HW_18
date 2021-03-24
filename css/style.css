@@ -56,12 +56,66 @@ footer ul {
     font-size: 20px;
 }
 
-.flexContainer {
+.mySkills {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+div.flexContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    text-align: center;
 }
 
 .flexContainer div {
     width: 33%;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+.flexContainer img {
+    max-width: 100%;
+}
+
+.myWork {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.project1 {
+    grid-area: project1Area;
+}
+
+.project2 {
+    grid-area: project2Area;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas: 'project1Area project2Area';
+    grid-template-rows: 100px 300px;
+    grid-template-columns: 50% 50%;
+}
+
+.workGrid img {
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 600) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .flexContainer div {
+        width: 100%;
+    }
+
+    .workGrid {
+        grid-template-areas:
+            "project1Area"
+            "project2Area"
+        ;
+        grid-template-rows: 100px 300px;
+        grid-template-columns: 1fr;
+    }
 }
